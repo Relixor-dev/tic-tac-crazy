@@ -41,3 +41,13 @@ throws an error for an illegal action. Pass `{ random: yourRandomFunction }`
 as the third argument to `applyAction` to control triangle randomness.
 
 Run the rules tests with `npm test`.
+
+## Running the game
+
+Run `npm start` to serve the game at <http://localhost:5000>. In VS Code, select
+**Run Tic Tac Crazy (port 5000)** in Run and Debug to start the server and open
+the game in a Chrome debugging session.
+
+Choose an action from the menu, then select a board cell. To use a sword or gun,
+select **Use an item**, choose one of your items, then choose an occupied target
+in range. Triangles activate as soon as selected.
