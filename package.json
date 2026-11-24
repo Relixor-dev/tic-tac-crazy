@@ -1,0 +1,8 @@
+{
+  "name": "tic-tac-crazy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
