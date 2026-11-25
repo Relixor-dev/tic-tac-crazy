@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <title>Tic Tac Crazy</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <p class="eyebrow">A twist on a classic</p>
+        <h1>Tic Tac Crazy</h1>
+        <p class="subtitle">Make three in a row. Use your items wisely.</p>
+      </header>
+
+      <section class="game-panel" aria-label="Game">
+        <div class="game-toolbar">
+          <p id="status" class="status" aria-live="polite"></p>
+          <button id="restart" class="restart" type="button">New game</button>
+        </div>
+
+        <div id="board" class="board" role="group" aria-label="Game board"></div>
+
+        <div class="controls">
+          <label for="action">Action</label>
+          <select id="action">
+            <option value="placeMark">Place a mark</option>
+            <option value="sword">Place a sword</option>
+            <option value="gun">Place a gun</option>
+            <option value="triangle">Place a triangle</option>
+            <option value="useItem">Use an item</option>
+          </select>
+          <p id="help" class="help"></p>
+        </div>
+
+        <p id="message" class="message" aria-live="polite"></p>
+
+        <div class="inventories" aria-label="Remaining items">
+          <p id="inventory-X"></p>
+          <p id="inventory-O"></p>
+        </div>
+      </section>
+
+      <footer>Take turns, place pieces, and change the board with your items.</footer>
+    </main>
+  </body>
+</html>
