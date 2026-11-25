@@ -8,6 +8,7 @@ const files = new Map([
   ["/", ["index.html", "text/html; charset=utf-8"]],
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/src/main.js", ["src/main.js", "text/javascript; charset=utf-8"]],
+  ["/src/computer.js", ["src/computer.js", "text/javascript; charset=utf-8"]],
   ["/src/game.js", ["src/game.js", "text/javascript; charset=utf-8"]],
   ["/src/style.css", ["src/style.css", "text/css; charset=utf-8"]],
 ]);
