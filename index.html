@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111827">
+    <meta name="theme-color" content="#123c2d">
     <title>Tic Tac Crazy</title>
     <link rel="stylesheet" href="/src/style.css">
     <script type="module" src="/src/main.js"></script>
@@ -25,14 +25,29 @@
         <div id="board" class="board" role="group" aria-label="Game board"></div>
 
         <div class="controls">
-          <label for="action">Action</label>
-          <select id="action">
-            <option value="placeMark">Place a mark</option>
-            <option value="sword">Place a sword</option>
-            <option value="gun">Place a gun</option>
-            <option value="triangle">Place a triangle</option>
-            <option value="useItem">Use an item</option>
-          </select>
+          <div class="mode-row" role="group" aria-label="Game mode">
+            <button class="mode-button active" type="button" data-game-mode="players" aria-pressed="true">2 players</button>
+            <button class="mode-button" type="button" data-game-mode="computer" aria-pressed="false">vs Computer</button>
+          </div>
+          <div id="difficulty-controls" class="difficulty-controls" role="group" aria-label="Computer difficulty" hidden>
+            <button class="difficulty-button active" type="button" data-difficulty="easy" aria-pressed="true">Easy</button>
+            <button class="difficulty-button" type="button" data-difficulty="medium" aria-pressed="false">Medium</button>
+            <button class="difficulty-button" type="button" data-difficulty="hard" aria-pressed="false">Hard</button>
+            <button class="difficulty-button" type="button" data-difficulty="insane" aria-pressed="false">Insane</button>
+          </div>
+          <p class="controls-label">Choose a move</p>
+          <div class="item-modes" role="group" aria-label="Move type">
+            <button class="item-mode active" type="button" data-item-mode="mark" aria-pressed="true">X / O</button>
+            <button class="item-mode" type="button" data-item-mode="sword" aria-pressed="false">
+              <span class="mode-icon" aria-hidden="true"></span>Sword
+            </button>
+            <button class="item-mode" type="button" data-item-mode="gun" aria-pressed="false">
+              <span class="mode-icon" aria-hidden="true"></span>Gun
+            </button>
+            <button class="item-mode" type="button" data-item-mode="triangle" aria-pressed="false">
+              <span class="mode-icon" aria-hidden="true"></span>Illuminati
+            </button>
+          </div>
           <p id="help" class="help"></p>
         </div>
 

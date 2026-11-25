@@ -48,6 +48,9 @@ Run `npm start` to serve the game at <http://localhost:5000>. In VS Code, select
 **Run Tic Tac Crazy (port 5000)** in Run and Debug to start the server and open
 the game in a Chrome debugging session.
 
-Choose an action from the menu, then select a board cell. To use a sword or gun,
-select **Use an item**, choose one of your items, then choose an occupied target
-in range. Triangles activate as soon as selected.
+Choose **2 players** or **vs Computer**, then select a move type and a board
+cell. The Sword, Gun, and Illuminati buttons toggle back to X/O when clicked
+again. To use a placed sword or gun, tap one of your own weapons and then an
+occupied target in range; tap an owned Illuminati pyramid to activate it.
+Computer games use X for the human player and O for the computer. Choose Easy,
+Medium, Hard, or Insane before or during a game.
